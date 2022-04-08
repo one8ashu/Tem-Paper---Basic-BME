@@ -1,0 +1,136 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{nitrr/}}
+\usepackage{pgf}
+\usepackage{pgfpages}
+
+\pgfpagesdeclarelayout{boxed}
+{
+  \edef\pgfpageoptionborder{0pt}
+}
+{
+  \pgfpagesphysicalpageoptions
+  {%
+    logical pages=1,%
+  }
+  \pgfpageslogicalpageoptions{1}
+  {
+    border code=\pgfsetlinewidth{1pt}\pgfstroke,%
+    border shrink=\pgfpageoptionborder,%
+    resized width=.95\pgfphysicalwidth,%
+    resized height=.95\pgfphysicalheight,%
+    center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+  }%
+}
+
+\pgfpagesuselayout{boxed}
+\begin{document}
+    \begin{introduction}
+    \huge{{\textbf{Biomedical Engineering Term Project}}\\\\
+    
+    \centering\large{Under the guidance of}\\\\
+    \centering\huge{Dr. Saurabh Gupta Sir\\
+    Department of Biomedical Engineering\\
+    National Institute of Technology, Raipur}\\\\
+    \centering\large{\\Submitted by}\\\\
+    \centering\huge{Shreyansh Srivastava\\
+    Roll no. 21111058\\
+    Biomedical Engineering}\\\\
+    \begin{figure}[h]
+        \centering
+    	\includegraphics[scale=0.7]{ML & Crypto/nitrr.jpg}
+    \end{figure}
+    \huge{National Institute of Technology, Raipur}
+    \end{introduction}
+
+	\clearpage
+	\begin{Acknowledgement}
+		\\\Huge{\textbf{\underline{Acknowledgement}}}\\
+		\\\large I would like to express my special thanks of gratitude to my teacher Dr. Saurabh Gupta Sir who gave me the golden opportunity to do this wonderful assignment, which also helped in me doing a lot of research and i came to know about so many new things, I am really thankful to them.\\\\
+		Secondly, I would also like to thank my parents and friends who helped me a lot in finalising the project within the limited time.\\\\
+		At last, I would like to thanks all of them who helped me a lot in gathering information, collecting data and guiding me from time to time, despite of their hectic schedule.\\\\
+		Thanking You\\
+		Shreyansh Srivastava\\
+		National Institute of Technology, Raipur
+	\end{Acknowledgement}
+	\clearpage
+	\paragraph{\Large \textbf{\centering \underline{Role of Machine Learning \& Crypto in Healthcare}}}
+	\section{\Large \textbf{\underline{Machine Learning in Healthcare}}}
+	\paragraph{The field of biomedical engineering is multidisciplinary such that it allows various fields creating huge intersection in Venn diagram. Machine Learning have a huge impact on healthcare like managing database of patients, performing surgical operations, telemedicine, delicate diagnostic machines, etc.\\\\
+	Following are the points that shows how treatment through ML is way better than conventional treatment:\\
+	1.	The operations done by machines are more precise, also the frequency is high.\\
+    2.	Machine Learning in healthcare is using Optical Character Recognition(OCR) technology on physicians’ handwriting, making the data entry fast and seamless, which can be analyzed by other machine learning tools to improve decision-making and patient care.\\\\}
+    \begin{figure}[h]
+    	\includegraphics[scale=0.3]{ML & Crypto/1.jpg}
+    	\includegraphics[scale=0.9]{ML & Crypto/download.jpg}
+    \end{figure}
+    
+    \textbf{\underline{Benefits of Machine Learning in healthcare}}\\
+    \begin{figure}[h]
+        \centering
+    	\includegraphics[scale=0.7]{ML & Crypto/2.jpg}
+    \end{figure}
+    
+    \textbf{1. Predictive approach }identifying dangerous diseases in the early stages can raise the chances of successful treatment significantly.\\
+    ML proved that it can predict dangerous diseases in at-risk patients. \\
+    This includes the identification of signs of diabetes (using a Naive Bayes algorithm), liver and kidney diseases, and oncology.
+    
+    \textbf{2. Personalised medicine }Personalized treatments can not only be more effective by pairing individual health with predictive analytics but is also ripe are for further research and better disease assessment. Currently, physicians are limited to choosing from a specific set of diagnoses or estimate the risk to the patient based on his symptomatic history and available genetic information. But machine learning in medicine is making great strides.
+    
+    \textbf{3. Drug discovery and diagnosis }One of the primary clinical applications of machine learning lies in early-stage drug discovery process. This also includes R&D technologies such as next-generation sequencing and precision medicine which can help in finding alternative paths for therapy of multifactorial diseases. Currently, the machine learning techniques involve unsupervised learning which can identify patterns in data without providing any predictions.
+    
+    \textbf{4. Drug discovery and diagnosis }Crowdsourcing is all the rage in the medical field nowadays, allowing researchers and practitioners to access a vast amount of information uploaded by people based on their own consent. This live health data has great ramifications in the way medicine will be perceived down the line.
+    
+    \textbf{5. Better radiotherapy }One of the most sought-after applications of machine learning in healthcare is in the field of Radiology. Medical image analysis has many discrete variables which can arise at any particular moment of time. There are many lesions, cancer foci, etc. which cannot be simply modeled using complex equations. Since ML-based algorithms learn from the multitude of different samples available on-hand, it becomes easier to diagnose and find the variables. One of the most popular uses of machine learning in medical image analysis is the classification of objects such as lesions into categories such as normal or abnormal, lesion or non-lesion, etc.
+    
+    \textbf{6. Predicting pandemic }AI-based technologies and machine learning are today also being put to use in monitoring and predicting epidemics around the world. Today, scientists have access to a large amount of data collected from satellites, real-time social media updates, website information, etc. Artificial neural networks help to collate this information and predict everything from malaria outbreaks to severe chronic infectious diseases. Predicting these outbreaks is especially helpful in third-world countries as they lack in crucial medical infrastructure and educational systems.\\
+    \begin{figure}[h]
+        \centering
+    	\includegraphics[scale=0.3]{ML & Crypto/3.jpg}
+    \end{figure}
+    
+    \textbf{\underline{Demerits of Machine Learning in healthcare}}\\
+    \paragraph{Besides having too much benefits, there are some disadvantages also which can prove life threatening :} 
+    
+    \textbf{1. Patients safety }the decisions made by the machine learning algorithm completely rely on the data it has been learned on by humans through supervised and unsupervised learning. If the input is unreliable or wrong, the result will be wrong as well. The flawed decision can harm the patient or even cause their death.
+    
+    \textbf{2. Lack of quality data to build precise algorithm }the results you get from machine learning algorithms depend on the quality of data put into them. Unfortunately, medical data is not always as precise and standardized as it often needs to be. There are gaps in records, inaccuracies in profiles, and other difficulties.
+    
+    \textbf{3. Skillset to handle machines }Besides hands-on healthcare specialists, an effective machine learning development team should include such roles:\\
+   •	Data scientist\\
+   •	Data engineer\\
+   •	Data architect\\
+   •	Business analyst\\
+   •	ML expert
+    
+    \textbf{4. Technical fault }any fault caused due to wear and tear of machine parts can prove life threatening.
+    
+    \textbf{5. Autonomy issue }ML can be effectively used to help people with psychological issues to make decisions to improve their health, but he ethical issue behind is people will potentially give up their autonomy and act as they are told.
+    
+    \textbf{6. Data collection }the medical data of the patients are difficult to extract and bring a general conclusion because different patients have different reaction to a particular stimulus.\\
+    
+    \section{\Large \textbf{\underline{Crypto \& Blockchain in Healthcare}}}
+    \textbf{\underline{What is blockchain?}}
+    \begin{figure}[h]
+    	\includegraphics[scale=0.3]{ML & Crypto/Blockchain-healthcare-graphic.png}
+    \end{figure}
+    \paragraph{A blockchain is a distributed system that generates and stores data records. It maintains a digital ledger of connected “blocks” of information that represent how data is shared, changed or accessed on its peer-to-peer network. If one computer’s data is accessed, changed, shared or otherwise manipulated in any way, a block is generated to locally record that information on every device. This way, changes to data can be easily identified. It’s a decentralized approach that allows data parity to be achieved by comparing every connected device’s blocks. On top of simply recording and comparing data is the utilization of “hashing.” Hashing gives every block a unique identifier that changes based on its contents. If a block’s data were to change, so would its hash. \\
+    This is important because blocks are stored together in chronological order and also directly reference the preceding block’s hash. Therefore, trying to change the data of one block would immediately cause a succeeding block to identify a hash change. It is for this reason that connected blocks form a “chain” securely wrought in an immutable, reliable, decentralized manner.  \\
+    Accurate, secure and a catalyst for utmost accountability, blockchain makes it almost impossible to mimic, manipulate or otherwise falsify data. This opens the doors to many possibilities — chief of all being the exchange, storage and access of data between connected parties.\\\\
+    }
+    \textbf{\underline{How blockchain is revolutionising the healthcare industry?}}
+    \paragraph{With blockchain, health care systems could store medical records confidentially, updating patient data across multiple facilities and locations in real time and with security. Data stored in blocks are highly secured because blocks are stored together in chronological order and also directly reference the preceding block’s hash. Therefore, trying to change the data of one block would immediately cause a succeeding block to identify a hash change. It is for this reason that connected blocks form a “chain” securely wrought in an immutable, reliable, decentralized manner.  }
+    \begin{figure}[h]
+        \centering
+    	\includegraphics[scale=0.7]{ML & Crypto/images.jpg}
+    \end{figure}
+    \clearpage
+    \textbf{\underline{\Large Conclusion}}
+    \paragraph{At last, I want to say that healthcare is a very diverse field with huge potential, it is also a multidisciplinary field. \\
+    Definitely, Machine Learning \& Crypto can play an important role in developing the healthcare system like machines doesn't complain anything about how much work they have done whereas doctors have a limit, they can do more precise operations, precise medicine, storing data of patients without any loopholes, doing complex very easily,etc.\\\\
+    But also they have their limits like the algorithms they use might have some loopholes which can be dangerous to the life of the patient, the maintenance of machines can be costly, fully dependencies on machines can also be harmful, they are bulky and costly, needs high assistance,needs high quality medical data without any problem which are difficult to find, any internal error can be dangerous to the life of patient, etc.\\\\
+    Thus we can say that ML \& Crytpto in Healthcare are in baby stages thus we have to work together for betterment of it.}
+\end{document}
+
+
